@@ -1,6 +1,6 @@
 README.md
 
-{{- if ne .chezmoi.hostname "bspwm-jankvisor" }}
-bspwm/
-sxhkd/
+{{ if ne .chezmoi.hostname "bspwm-jankvisor" -}}
+.config/bspwm/**
+.config/sxhkd/**
 {{- end }}
