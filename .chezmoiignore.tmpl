@@ -1,5 +1,9 @@
 README.md
 
+{{ if ne .chezmoi.data.isX -}}
+.config/nitrogen/**
+{{- end }}
+
 {{ if ne .chezmoi.hostname "bspwm-jankvisor" -}}
 .config/bspwm/**
 .config/sxhkd/**
