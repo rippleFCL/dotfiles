@@ -3,7 +3,7 @@ setimg () {
 }
 
 if [ -e "${HOME}/.cache/wal/colors" ]; then
-    wal -R --cols16
+    wal -e -R --cols16
 
     echo "Cached colors exist. Using existing colors."
 else
@@ -13,7 +13,7 @@ else
     RANDOMPICS=${PICS[ $RANDOM % ${#PICS[@]} ]}
 
     setimg ${DIR}/${RANDOMPICS}
-    wal -i ${DIR}/${RANDOMPICS} --cols16
+    wal -e -i ${DIR}/${RANDOMPICS} --cols16
 
     echo "Successfully set a new wallpaper and generated colors from it."
 fi
