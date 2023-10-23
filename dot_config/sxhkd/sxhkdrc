@@ -10,6 +10,9 @@ super + Return
 super + d
 	.config/rofi/scripts/launcher_t1
 
+super + w
+	.config/scripts/wallpaper/changewallpaper.sh
+
 # make sxhkd reload its configuration files:
 super + Escape
 	pkill -USR1 -x sxhkd
