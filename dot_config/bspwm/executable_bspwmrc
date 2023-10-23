@@ -18,3 +18,4 @@ bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
 
 ~/.config/scripts/wallpaper/initwallpaper.sh &
+polybar mybar 2>&1 &
