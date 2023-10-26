@@ -17,6 +17,11 @@ super + w
 super + Escape
 	pkill -USR1 -x sxhkd
 
+ctrl + alt + b
+	ssh vmaudio@10.0.1.30 -X bash "killall -q 'blueman-applet'; killall -q 'blueman-manager'; sleep 1; blueman-applet & blueman-manager; killall -q 'blueman-applet'"
+
+ctrl + alt + v
+	ssh vmaudio@10.0.1.30 -X pavucontrol
 
 # bspwm hotkeys
 #
