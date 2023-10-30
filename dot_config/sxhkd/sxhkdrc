@@ -6,6 +6,9 @@
 super + t
 	kitty
 
+super + s
+	escrotum -s /home/ripple/Pictures/%Y-%m-%d-%H%M%S.png
+
 # program launcher
 super + d
 	.config/rofi/scripts/launcher_t1
