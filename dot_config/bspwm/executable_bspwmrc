@@ -13,15 +13,17 @@ bspc config gapless_monocle      true
 
 bspc rule -a Blueman-manager desktop='^10'
 bspc rule -a Pavucontrol desktop='^10'
-bspc rule -a discord desktop='^1'
+bspc rule -a discord desktop='^1' follow=on
 bspc rule -a firefox --one-shot  desktop='^2'
 bspc rule -a Code --one-shot  desktop='^3'
+bspc rule -a Spotify desktop='^9'
 
 ~/.config/scripts/jankvisor/launch_bt.sh &
 pavucontrol &
 discord &
 firefox &
 code &
+spotify-launcher &
 ~/.config/scripts/wallpaper/initwallpaper.sh &
 polybar mybar 2>&1 &
 dunst &
