@@ -5,7 +5,7 @@ README.md
 .config/polybar/**
 {{- end }}
 
-{{ if ne .chezmoi.hostname "bspwm-jankvisor" -}}
+{{ if ne .chezmoi.config.data.isX true -}}
 .config/bspwm/**
 .config/sxhkd/**
 {{- end }}
