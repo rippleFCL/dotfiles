@@ -1,11 +1,8 @@
 README.md
 
-{{ if ne .chezmoi.config.data.isX true -}}
+{{ if ne .chezmoi.config.data.os_is_x true -}}
 .config/nitrogen/**
 .config/polybar/**
-{{- end }}
-
-{{ if ne .chezmoi.config.data.isX true -}}
 .config/bspwm/**
 .config/sxhkd/**
 {{- end }}
