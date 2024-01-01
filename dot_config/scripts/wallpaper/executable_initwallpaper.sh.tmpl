@@ -1,10 +1,6 @@
 #!/bin/bash
-setimg () {
-  nitrogen $1 --set-zoom-fill
-}
-
 if [ -e "${HOME}/.cache/wal/colors" ]; then
-    wal -e -R --cols16
+    wal -n -e -R --cols16
 
     echo "Cached colors exist. Using existing colors."
 else
@@ -12,9 +8,10 @@ else
     PICS=($(ls ${DIR}))
 
     RANDOMPICS=${PICS[ $RANDOM % ${#PICS[@]} ]}
-
-    setimg ${DIR}/${RANDOMPICS}
-    wal -e -i ${DIR}/${RANDOMPICS} --cols16
+    echo ${DIR}/${RANDOMPICS}
+    nitrogen ${DIR}/${RANDOMPICS} --set-zoom-fill
+    wal -n -e -i ${DIR}/${RANDOMPICS} --cols16
 
     echo "Successfully set a new wallpaper and generated colors from it."
 fi
+
