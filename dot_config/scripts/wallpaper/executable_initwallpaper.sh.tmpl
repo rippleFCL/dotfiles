@@ -9,7 +9,7 @@ else
 
     RANDOMPICS=${PICS[ $RANDOM % ${#PICS[@]} ]}
     echo ${DIR}/${RANDOMPICS}
-    nitrogen ${DIR}/${RANDOMPICS} --set-zoom-fill
+    nitrogen ${DIR}/${RANDOMPICS} --set-zoom-fill --save
     wal -n -e -i ${DIR}/${RANDOMPICS} --cols16
 
     echo "Successfully set a new wallpaper and generated colors from it."
