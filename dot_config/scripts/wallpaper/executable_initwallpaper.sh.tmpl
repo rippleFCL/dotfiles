@@ -1,7 +1,7 @@
 #!/bin/bash
 if [ -e "${HOME}/.cache/wal/colors" ]; then
     wal -n -e -R --cols16
-
+    nitrogen --restore
     echo "Cached colors exist. Using existing colors."
 else
     DIR=$HOME/.config/wallpapers
@@ -14,4 +14,3 @@ else
 
     echo "Successfully set a new wallpaper and generated colors from it."
 fi
-
