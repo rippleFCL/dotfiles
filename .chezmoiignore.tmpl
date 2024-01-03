@@ -1,8 +1,29 @@
 README.md
 
-{{ if ne .chezmoi.config.data.os_is_x true -}}
-.config/nitrogen/**
-.config/polybar/**
+{{ if ne .chezmoi.config.data.has_package_bspwm true -}}
 .config/bspwm/**
+{{- end }}
+{{ if ne .chezmoi.config.data.has_package_dunst true -}}
+.config/dunst/**
+{{- end }}
+{{ if ne .chezmoi.config.data.has_package_kitty true -}}
+.config/kitty/**
+{{- end }}
+{{ if ne .chezmoi.config.data.has_package_neofetch true -}}
+.config/neofetch/**
+{{- end }}
+{{ if ne .chezmoi.config.data.has_package_nitrogen true -}}
+.config/nitrogen/**
+{{- end }}
+{{ if ne .chezmoi.config.data.has_package_polybar true -}}
+.config/polybar/**
+{{- end }}
+{{ if ne .chezmoi.config.data.has_package_rofi true -}}
+.config/rofi/**
+{{- end }}
+{{ if ne .chezmoi.config.data.has_package_sxhkd true -}}
 .config/sxhkd/**
+{{- end }}
+{{ if ne .chezmoi.config.data.has_package_pywal16 true -}}
+.config/wal/**
 {{- end }}
