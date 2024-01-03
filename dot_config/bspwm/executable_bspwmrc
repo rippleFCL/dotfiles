@@ -15,7 +15,7 @@ bspc rule -a Blueman-manager desktop='^10'
 bspc rule -a Pavucontrol desktop='^10'
 bspc rule -a discord desktop='^1' follow=on
 {{ if ne .chezmoi.config.data.has_package_firefox-esr true -}}
-bspc rule -a firefox-esr --one-shot  desktop='^2'
+bspc rule -a Firefox-esr --one-shot  desktop='^2'
 {{ else }}
 bspc rule -a firefox --one-shot  desktop='^2'
 {{ end }}
